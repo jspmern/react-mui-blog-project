@@ -78,6 +78,7 @@ function MuiNav() {
             alt="Remy Sharp"
             src="https://media.licdn.com/dms/image/v2/D5603AQEwvjm5kRAeGg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714505856986?e=1735171200&v=beta&t=8dN3zP5RAL9hZCw1cT8q6dlFTZUY_w6bzqKIYxcUpv8"
             onClick={(e) => setOpen(true)}
+            sx={{ width: 30, height: 30 }}
           />
         </IconContainer>
         <UserBox onClick={(e) => setOpen(true)}>

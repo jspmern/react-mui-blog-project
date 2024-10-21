@@ -10,6 +10,7 @@ import {
   Shop,
   SupervisedUserCircleOutlined,
 } from "@mui/icons-material";
+import ModeNightIcon from "@mui/icons-material/ModeNight";
 import {
   Box,
   List,
@@ -17,6 +18,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 import React from "react";
 
@@ -79,6 +81,14 @@ function MuiAside() {
                 <DataUsageRounded />
               </ListItemIcon>
               <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <ModeNightIcon />
+              </ListItemIcon>
+              <Switch />
             </ListItemButton>
           </ListItem>
         </List>
