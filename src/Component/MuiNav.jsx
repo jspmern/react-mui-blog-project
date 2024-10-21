@@ -6,6 +6,7 @@ import {
   Avatar,
   Badge,
   Box,
+  InputBase,
   Menu,
   MenuItem,
   styled,
@@ -26,6 +27,7 @@ let SearchContainer = styled("div")(({ theme }) => {
   return {
     backgroundColor: "white",
     width: "40%",
+    padding: "0 10px",
     borderRadius: theme.shape.borderRadius,
   };
 });
@@ -60,12 +62,7 @@ function MuiNav() {
         </Typography>
         <Pets sx={{ display: { xs: "block", sm: "none" } }} />
         <SearchContainer>
-          <TextField
-            id="outlined-basic"
-            label="Search..."
-            variant="outlined"
-            fullWidth
-          />
+          <InputBase placeholder="search..." />
         </SearchContainer>
         <IconContainer>
           <Badge badgeContent={4} color="error">

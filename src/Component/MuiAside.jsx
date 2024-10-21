@@ -1,4 +1,5 @@
 import {
+  Add,
   DataUsageRounded,
   Group,
   Home,
@@ -13,16 +14,18 @@ import {
 import ModeNightIcon from "@mui/icons-material/ModeNight";
 import {
   Box,
+  Fab,
   List,
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
   Switch,
+  Tooltip,
 } from "@mui/material";
 import React from "react";
 
-function MuiAside() {
+function MuiAside({ mode, setMode }) {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box sx={{ position: "fixed" }}>
@@ -88,7 +91,12 @@ function MuiAside() {
               <ListItemIcon>
                 <ModeNightIcon />
               </ListItemIcon>
-              <Switch />
+              <Switch
+                onChange={(e) => {
+                  setMode(e.target.checked);
+                }}
+                checked={mode}
+              />
             </ListItemButton>
           </ListItem>
         </List>

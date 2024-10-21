@@ -1,4 +1,4 @@
-import { Favorite, MoreVert, Share } from "@mui/icons-material";
+import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
 import {
   Avatar,
   Box,
@@ -7,6 +7,7 @@ import {
   CardContent,
   CardHeader,
   CardMedia,
+  Checkbox,
   IconButton,
   Typography,
 } from "@mui/material";
@@ -45,7 +46,10 @@ function MuiCard() {
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
-            <Favorite />
+            <Checkbox
+              icon={<FavoriteBorder />}
+              checkedIcon={<Favorite color="error" />}
+            />
           </IconButton>
           <IconButton aria-label="share">
             <Share />
