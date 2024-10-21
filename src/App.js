@@ -11,7 +11,7 @@ function App() {
       <CssBaseline />
       <Box>
         <MuiNav />
-        <Stack direction={"row"} justifyContent={"space-evenly"}>
+        <Stack direction={"row"} justifyContent={"space-evenly"} gap={2}>
           <MuiAside />
           <MuiMain />
           <MuiRight />
