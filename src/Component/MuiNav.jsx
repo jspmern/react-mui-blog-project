@@ -1,5 +1,5 @@
 import { Mail, Pets } from "@mui/icons-material";
-import PetsIcon from "@mui/icons-material/Pets";
+
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import {
   AppBar,
@@ -49,7 +49,7 @@ let UserBox = styled(Box)(({ theme }) => {
     },
   };
 });
-let Avtai;
+
 function MuiNav() {
   let [open, setOpen] = useState(false);
   return (
